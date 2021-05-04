@@ -30,10 +30,13 @@ a {
 	display: flex;
 }
 .h{
-	align-items: center;
 	justify-content: center;
 }
 .v {
+	align-items: center;
+}
+.c {
+	justify-content: center;
 	align-items: center;
 }
 .logo img{
@@ -346,61 +349,34 @@ ul.mb li.user_mobile i{
 .box-t img{
 	width: 100px; 
 }
-@media screen and (max-width: 1200px){
-	.wrapper{
-		width: 100%;
-		padding: 0 15px;
-		box-sizing: border-box;
-	}
-	.box-t li h3{
-		color: #000000;
-	}
-	.box-t a{
-		width: auto;
-		height: 230px;
-	}
-}
-@media screen and (max-width: 640px){
-	.box-t li{
-		color: #000000;
-		width: 50%;
-	}
-}
-@media screen and (max-width: 480px) {
-	.box-t li {
-		width: 50%;
-	}
-}
-@media screen and (min-width: 641px){
-	.box-t li h3{
-		color: #000000;
-	}
-}
 .box-about{
-	background: #c6c6c6;
-	padding: 2%;
-	border-radius: 5px;
-	margin-top: 30px;
-	box-shadow: 0px 0px 10px silver;
-	display: inline-block;
-	box-sizing: border-box;
-	font-size: 1rem;
+	padding: 10px;
+	background: #e8e8e8;
+	margin-top: 12px;
+	box-shadow: 0 2px 5px #9e9e9e;
+	border-radius: 3px;
+	overflow: hidden;
 }
 .box-about h2{
 	text-align: center;
 	text-transform: uppercase;
-	margin-bottom: 1%;
-	font-size: 120%;
+	font-size: 1rem;
+	margin-bottom: 10px;
 }
-.box-about h3{
-	text-align: center;
-	text-transform: uppercase;
-	margin-bottom: 1%;
-	font-size: 100%;
+.box-about h3 {
+	margin: 10px 0;
 }
-.box-about .p{
-	text-align: justify;
-	margin-bottom: 2%;
+.box-about ul {
+	list-style: disc;
+	list-style-position: inside;
+}
+.box-about .ic {
+	padding: 0 20px;
+	color: #0f5d6e;
+}
+.l-i img {
+	min-width: 50%;
+	object-fit: contain;
 }
 div.info{
 	float: left;
@@ -443,4 +419,51 @@ ul.list{
 	display: flex;
 	flex-wrap: wrap;
 	margin-top: 10px;
+}
+.tc {
+	text-align: center;
+}
+@media screen and (max-width: 1200px){
+	.wrapper{
+		width: 100%;
+		padding: 0 15px;
+		box-sizing: border-box;
+	}
+	.box-t li h3{
+		color: #000000;
+	}
+	.box-t a{
+		width: auto;
+		height: 230px;
+	}
+}
+@media screen and (max-width: 640px){
+	.box-t li{
+		color: #000000;
+		width: 50%;
+	}
+	.l-i {
+		flex-direction: column;
+	}
+	.l-i img {
+		min-width: 100%;
+		margin-top: 10px;
+	}
+}
+@media screen and (max-width: 480px) {
+	.box-t li {
+		width: 50%;
+	}
+	.box-about .ic {
+		font-size: 1.5rem;
+		padding: 3px 0 5px;
+	}
+	.tx {
+		align-items: unset;
+	}
+}
+@media screen and (min-width: 641px){
+	.box-t li h3{
+		color: #000000;
+	}
 }

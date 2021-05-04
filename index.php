@@ -207,7 +207,32 @@
     </section>
     <section class="content-info">
             <div class="wrapper ">
-                <div class="c">
+                <div class="box-about">
+                    <h2>Quando devo formatar meu PC?</h2>
+                    <div class="flex">
+                        <div class="flex v tx">
+                            <i class="material-icons ic">info</i>
+                        </div>
+                        <p>
+                            A formatação vai ajudar na eficiência de sua performance durante os trabalhos, dará uma nova “vida” para a máquina. 
+                            Vai acabar com aqueles programas difíceis de desinstalar como barras de navegador e outros, vírus que estavam escondidos, etc.
+                        </p>
+                    </div>
+                    <h3 class="tc">Existem diversas razões para se formatar um computador, algumas delas são:</h3>
+                    <div class="flex l-i h">
+                        <ul>
+                            <li>Lentidão ao utilizar o computador;</li>
+                            <li>A restauração não foi suficiente para resolver o problema;</li>
+                            <li>Troca de hardwares;</li>
+                            <li>Atualizações de sistema malsucedidas;</li>
+                            <li>Pane geral no sistema operacional;</li>
+                            <li>Infestação de vírus ou sequestros de dados;</li>
+                            <li>Venda ou doação do computador para terceiros.</li>
+                        </ul>
+                        <img src="images/sistemas-operacionais.png">
+                    </div>
+                </div>
+                <!-- <div class="c">
                     <div class="box-about">
                         <div class="info"><i class="material-icons">info</i></div>
                         <h2>Quando devo formatar meu PC?</h2>
@@ -229,7 +254,7 @@
                             </ul>
                         </p>
                     </div>
-                </div>
+                </div> -->
             </div>
     </section>
     <section class="content-plans">
