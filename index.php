@@ -229,7 +229,9 @@
                             <li>Infestação de vírus ou sequestros de dados;</li>
                             <li>Venda ou doação do computador para terceiros.</li>
                         </ul>
-                        <img src="images/sistemas-operacionais.png">
+                        <div>
+                            <img src="images/sistemas-operacionais.png">
+                        </div>
                     </div>
                 </div>
                 <!-- <div class="c">

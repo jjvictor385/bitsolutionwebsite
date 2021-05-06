@@ -364,7 +364,7 @@ ul.mb li.user_mobile i{
 	margin-bottom: 10px;
 }
 .box-about h3 {
-	margin: 10px 0;
+	margin: 10px 0 20px;
 }
 .box-about ul {
 	list-style: disc;
@@ -373,9 +373,16 @@ ul.mb li.user_mobile i{
 .box-about .ic {
 	padding: 0 20px;
 	color: #0f5d6e;
+	font-size: 2.5rem;
+}
+.l-i > div {
+	position: relative;
+	width: 250px;
 }
 .l-i img {
-	min-width: 50%;
+	position: absolute;
+	height: 100%;
+	width: 100%;
 	object-fit: contain;
 }
 div.info{
@@ -445,9 +452,12 @@ ul.list{
 	.l-i {
 		flex-direction: column;
 	}
-	.l-i img {
-		min-width: 100%;
-		margin-top: 10px;
+	.l-i > div {
+		width: auto;
+	}
+	.l-i > div img {
+		position: relative;
+		margin-top: 20px;
 	}
 }
 @media screen and (max-width: 480px) {
