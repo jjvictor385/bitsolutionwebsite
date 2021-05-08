@@ -11,6 +11,7 @@
     <script src="https://kit.fontawesome.com/c2269f3ce2.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- Por exemplo, se eu alterar algum texto Fizemos uma pequena alteração, viu ali, o ícone sinalizando que foi feito uma alteração no repositório? vi Ok, vamos ao terminal -->
     <div class="top">
         <div class="wrapper">
             <div class="flex">
@@ -18,7 +19,7 @@
                     <img src="images/logo1.png">
                 </div>
                 <h2 class="slogan flex v">
-                    A Solução Tecnológica para o seu dia a dia
+                    A Solução Tecnológica para o seu dia-a-dia
                 </h2>
                 <div class="content-right">
 					<div class="acc left">
