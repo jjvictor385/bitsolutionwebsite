@@ -10,6 +10,8 @@ body {
     font-family: 'Open Sans', sans-serif;
     background: #f1f1f1;
     font-size: .9rem;
+	---theme: #154854;
+	---blue: #15365ded;
 }
 ul {
 	list-style: none;
@@ -119,15 +121,16 @@ a {
 	bottom: 0;
 	right: 0;
 	width: 480px;
+	height: auto;
 	background: #fff;
 	padding-top: 70px;
 	transform: translateX(100%);
 	opacity: 0;
 	transition: all 0.2s;
-	z-index: 1;
+	z-index: 10;
 }
 .switcher {
-	z-index: 2;
+	z-index: 11;
 }
 #switcher:checked ~ .m {
 	opacity: 1;
@@ -288,6 +291,7 @@ ul.mb li.user_mobile i{
 	align-items: center;
 	justify-content: center;
 	font-size: 6rem;
+	margin-top: -10%;
 }
 .caixa{
 	border-color: #ebebebdb;
@@ -317,7 +321,7 @@ ul.mb li.user_mobile i{
 	width: 25%;
 }
 .box-t a {
-	background: #fff;
+	background: #e8e8e8;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -325,12 +329,7 @@ ul.mb li.user_mobile i{
 	border-radius: 10px;
 	margin: 5px;
 	padding: 20px 0;
-	height: 200px;
-	border: solid 3px #154854;
-}
-.box-t a:hover {
-	background: #154854;
-	color: #ebebeb;
+	height: 270px;
 }
 .box-t li .big{
 	font-size: 100px;
@@ -408,7 +407,7 @@ ul.list{
 	list-style-type: disc;
 }
 .box-t-plans a{
-	background: #acaaaa;
+	background: #e8e8e8;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -416,16 +415,18 @@ ul.list{
 	margin: 5px;
 	padding: 20px 0;
 	height: 200px;
-	box-shadow: 0px 0px 10px #c0c0c0;
 	height: 300px;
+	border-radius: 10px;
 }
 .box-t-plans li{
-	width: 25%;
+	width: 33.3%;
 }
 .box-t-plans {
-	display: flex;
 	flex-wrap: wrap;
 	margin-top: 10px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .tc {
 	text-align: center;
@@ -439,15 +440,47 @@ ul.list{
 	.box-t li h3{
 		color: #000000;
 	}
+	.box-t li{
+		width: 50%;
+	}
 	.box-t a{
 		width: auto;
 		height: 230px;
+	}
+	.box-t-plans a{
+		width: auto;
+		height: 230px;
+	}
+	.box-t-plans li a .material-icons.big{
+		font-size: 110px;
+		text-align: center;
+		margin-bottom: 1%;
+	}
+	.box-t-plans li a h3{
+		font-size: 1rem;
+	}
+	.box-t-plans li{
+		width: 50%;
+	}
+	.box-t-plans li a p{
+		font-size: 20px;
 	}
 }
 @media screen and (max-width: 640px){
 	.box-t li{
 		color: #000000;
-		width: 50%;
+		width: 100%;
+	}
+	.box-t-plans li{
+		color: #000000;
+		width: 100%;
+	}
+	.box-t-plans li a .material-icons.big{
+		font-size: 120px;
+		margin-bottom: 1%;
+	}
+	.box-t-plans li a h3, .box-t li a h3{
+		font-size: 1rem;
 	}
 	.l-i {
 		flex-direction: column;
@@ -459,10 +492,24 @@ ul.list{
 		position: relative;
 		margin-top: 20px;
 	}
+	.box-t-plans li a p{
+		font-size: 18px;
+	}
 }
 @media screen and (max-width: 480px) {
 	.box-t li {
-		width: 50%;
+		width: 100%;
+		margin-left: 2px;
+	}
+	.box-t-plans li {
+		width: 100%;
+		margin-left: 2px;
+	}
+	.box-t-plans li a h3{
+		font-size: .9rem;
+	}
+	.box-t-plans li i.big{
+		margin-bottom: 1%;
 	}
 	.box-about .ic {
 		font-size: 1.5rem;
@@ -471,9 +518,94 @@ ul.list{
 	.tx {
 		align-items: unset;
 	}
+	.box-t-plans li a p{
+		font-size: 18px;
+	}
 }
 @media screen and (min-width: 641px){
 	.box-t li h3{
 		color: #000000;
 	}
+	.box-t-plans a p#t{
+		font-size: .9rem;
+		text-align: center;
+		padding:0 1.9%;
+	}
+}
+.box-t-plans a p#p{
+	padding: 3%;
+	padding-bottom: 1%;
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 30px;
+	color: #0d3f4b;
+}
+.box-t-plans a p#m{
+	font-size: 0.9rem;
+	font-weight: bold;
+	font-family: 'Arial', sans-serif;
+}
+.box-t-plans a p#t strong{
+	color: #075c07;
+}
+.box-t-plans a .big{
+	font-size: 120px;
+	color: #154854;
+	margin-bottom: -1%;
+	text-align: center;
+}
+.box-t-plans i.big#b{
+	transform: rotate(44deg);
+}
+.box-t-plans a h3{
+	font-size: 1.5rem;
+	text-align: center;
+	text-transform: uppercase;
+}
+li.user{
+	color: #154854;
+	padding: 4%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.5rem;
+	font-family: 'Share Tech', sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+section.content-plans{
+	margin-top: 2%;
+	background: var(---theme);
+	padding-top: 0.1%;
+	padding-bottom: 1%;
+}
+section.content-plans .os, section.content-service .os{
+	color: #ebebeb;
+}
+section.content-service{
+	background: var(---blue);
+	padding-top: 0.1%;
+	padding-bottom: 1%;
+}
+ol{
+	list-style: none;
+}
+button.topo{
+	position: fixed;
+	border-radius: 100%;
+	padding: 1%;
+	border: none;
+	text-align: center;
+	left: 90%;
+	top: 85%;
+	background: #fff;
+	z-index: 2;
+	width: 60px;
+	height: 60px;
+	cursor: pointer;
+}
+button.topo i{
+	margin: 0;
+	color: #000;
 }

@@ -1,3 +1,6 @@
+<?php 
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -11,7 +14,9 @@
     <script src="https://kit.fontawesome.com/c2269f3ce2.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- Por exemplo, se eu alterar algum texto Fizemos uma pequena alteração, viu ali, o ícone sinalizando que foi feito uma alteração no repositório? vi Ok, vamos ao terminal -->
+    <div class="btn_topo">
+        <a href="#top"><button class="topo"><i class="material-icons">arrow_upward</i></button></a>
+    </div>
     <div class="top">
         <div class="wrapper">
             <div class="flex">
@@ -19,7 +24,7 @@
                     <img src="images/logo1.png">
                 </div>
                 <h2 class="slogan flex v">
-                    A Solução Tecnológica para o seu dia-a-dia
+                    A Solução Tecnológica para o seu dia a dia
                 </h2>
                 <div class="content-right">
 					<div class="acc left">
@@ -114,6 +119,13 @@
             <li class="user_mobile">
                 <i class="material-icons">account_circle</i>
             </li>
+            <li class='user'>
+            <?php if (isset($_SESSION['id'])) : ?>
+								<p>Olá, <?php echo $_SESSION['nome']; ?>!</p>
+								<?php else: ?>
+								<p>Olá, visitante!</p>
+								<?php endif; ?>
+            </li>
             <li>
                 <a href="#" class="active">
                     <i class="material-icons">home</i>
@@ -156,18 +168,29 @@
                     Criar conta
                 </a>
             </li>
+            <?php if (isset($_SESSION['id'])) : ?>
+                <?php else: ?>
             <li>
                 <a href="#">
                     <i class="material-icons">lock</i>
                     Logon
                 </a>
             </li>
+            <?php endif; ?>
             <li>
                 <a href="#">
                     <i class="material-icons">info</i>
                     Sobre a Empresa
                 </a>
-            </li>
+                </li>
+                <?php if (isset($_SESSION['id'])) : ?>
+                <li>
+                <a href="#">
+                    <i class="material-icons">logout</i>
+                    Sair
+                </a>
+                </li>
+                <?php endif; ?>
         </ul>
     </div>
     </div>
@@ -234,30 +257,7 @@
                             <img src="images/sistemas-operacionais.png">
                         </div>
                     </div>
-                </div>
-                <!-- <div class="c">
-                    <div class="box-about">
-                        <div class="info"><i class="material-icons">info</i></div>
-                        <h2>Quando devo formatar meu PC?</h2>
-                        <p class="p">
-                        A formatação vai ajudar na eficiência de sua performance durante os trabalhos, dará uma nova “vida” para a máquina. 
-                        Vai acabar com aqueles programas difíceis de desinstalar como barras de navegador e outros, vírus que estavam escondidos, etc.
-                        </p>
-                        <h3>Existem diversas razões para se formatar um computador, algumas delas são:</h3>
-                        <img src="images/sistemas-operacionais.png" alt="S.O" title="Sistemas Operacionais" class="img">
-                        <p class="p">
-                            <ul class="list">
-                                <li>Lentidão ao utilizar o computador;</li>
-                                <li>A restauração não foi suficiente para resolver o problema;</li>
-                                <li>Troca de hardwares;</li>
-                                <li>Atualizações de sistema malsucedidas;</li>
-                                <li>Pane geral no sistema operacional;</li>
-                                <li>Infestação de vírus ou sequestros de dados;</li>
-                                <li>Venda ou doação do computador para terceiros.</li>
-                            </ul>
-                        </p>
-                    </div>
-                </div> -->
+                </div>  
             </div>
     </section>
     <section class="content-plans">
@@ -265,23 +265,32 @@
             <legend class="os">Planos</legend>
             <div class="wrapper">
                 <div class="c">
-                    <div class="c">
                         <ul class="box-t-plans">
                             <li>
-                                <div class="laco"></div>
                                 <a href="" class="waves">
-                                    <i class="material-icons">arrow_right_alt</i><br>
-                                    <h3>More</h3> 
+                                    <i class="material-icons big">web</i>
+                                    <h3>Demonstrativo</h3>
+                                    <p id="p">R$ 1200,00</p>                                    
+                                    <p id="m">+ R$300,00 por mês</p>
                                 </a>
                             </li>
                             <li>
                                 <a href="" class="waves">
-                                    <i class="material-icons">arrow_right_alt</i><br>
-                                    <h3>More</h3> 
+                                    <i class="material-icons big">shopping_cart</i>
+                                    <h3>Loja Online</h3>
+                                    <p id="p">R$ 1700,00</p>                                    
+                                    <p id="m">+ R$350,00 por mês</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="waves">
+                                    <i class="material-icons big" id="b">cancel</i>
+                                    <h3>Outros</h3>
+                                    <p id="t">Planos a partir de <strong>R$ 800,00</strong> à <strong>R$ 5000,00</strong></p>
+                                    <p id="t">Preços variam de acordo com o desejo do cliente</p>
                                 </a>
                             </li>
                         </ul>
-                    </div>
                 </div>
             </div>
         </fieldset>
