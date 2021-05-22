@@ -296,5 +296,24 @@ session_start();
         </fieldset>
     </section>
     <script src="js/waves.js"></script>
+    <script type="text/javascript">
+        var b = document.querySelector('.topo');
+
+        b.addEventListener('click', function (e) {
+            
+            e.preventDefault();
+
+            window.scroll({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        addEventListener('scroll', function () {
+
+            this.scrollY > 10 && (b.classList.add('s'), 1) || b.classList.remove('s');
+
+        });
+    </script>
 </body>
 </html>
