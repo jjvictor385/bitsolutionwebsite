@@ -428,6 +428,29 @@ ul.list{
     align-items: center;
     justify-content: center;
 }
+.box-t-business div.a{
+	/* background: var(---blue); */
+	background: #000;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 5px;
+	padding: 20px 0;
+	height: 350px;
+	height: 370px;
+	border-radius: 10px;
+}
+.box-t-business li{
+	width: 25%;
+}
+.box-t-business{
+	flex-wrap: wrap;
+	margin-top: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 .tc {
 	text-align: center;
 }
@@ -546,8 +569,15 @@ ul.list{
 	font-weight: bold;
 	font-family: 'Arial', sans-serif;
 }
+.box-t-business p#t{
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: .9rem;
+	color: #ebebeb;
+}
 .box-t-plans a p#t strong{
-	color: #075c07;
+	color: #124d12;
 }
 .box-t-plans a .big{
 	font-size: 120px;
@@ -562,6 +592,32 @@ ul.list{
 	font-size: 1.5rem;
 	text-align: center;
 	text-transform: uppercase;
+}
+.box-t-business div.a h3{
+	font-size: 1.4rem;
+	margin-top: 1%;
+	text-align: center;
+	text-transform: uppercase;
+	color: #0d662b;
+}
+.box-t-business div.a img{
+	width: 170px;
+	height: 250px;
+	border-radius: 3px;
+}
+.box-t-business div.a a i{
+	font-size: 1.7rem;
+	margin-top: 5%;
+	color: #f1f1f1;
+}
+.box-t-business div.a a.telegram i{
+	color: #0088cc;
+}
+.box-t-business div.a a.facebook i{
+	color: #3b5998;
+}
+.box-t-business div.a a.whatsapp i{
+	color: #008000;
 }
 li.user{
 	color: #154854;

@@ -295,6 +295,84 @@ session_start();
             </div>
         </fieldset>
     </section>
+    <section class="business">
+        <fieldset class="caixa">
+            <legend class="os">Membros</legend>
+            <div class="wrapper">
+                <div class="c">
+                    <ul class="box-t-business">
+                        <li>
+                            <div class="a">
+                                <img src="images/members/wesley.jpg">
+                                <h3>Wesley Silva</h3>
+                                <p id="t">Técnico em Informática</p>
+                                <p id="t">CEO/Presidente da empresa</p>
+                                <p class="contacts">
+                                    <a target="blank_" href="https://api.whatsapp.com/send?phone=5588994276261&text=Ol%C3%A1%2C%20quero%20conhecer%20os%20servi%C3%A7os%20apresentados%20pela%20sua%20empresa.%20Meu%20nome%20%C3%A9%20" class="whatsapp">
+                                        <i class="fab fa-whatsapp"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/silvawesley978/" target="blank_" class="instagram">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a href="https://www.facebook.com/profile.php?id=100012328428893" target="blank_" class="facebook">
+                                        <i class="fab fa-facebook"></i>
+                                    </a>
+                                    <a href="https://t.me/wesleysilva" target="blank_" class="telegram">
+                                        <i class="fab fa-telegram"></i>
+                                    </a>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="a">
+                                <img src="images/members/wanderson.jpg">
+                                <h3>Wanderson Silva</h3>
+                                <p id="t">Técnico em Redes de Computadores</p>
+                                <p id="t">Vice-presidente da empresa</p>
+                                <p class="contacts">
+                                    <a target="blank_" href="" class="whatsapp">
+                                        <i class="fab fa-whatsapp"></i>
+                                    </a>
+                                    <a href="" target="blank_" class="instagram">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a href="" target="blank_" class="facebook">
+                                        <i class="fab fa-facebook"></i>
+                                    </a>
+                                    <a href="" target="blank_" class="telegram">
+                                        <i class="fab fa-telegram"></i>
+                                    </a>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="a">
+                                <img src="images/members/joao.jpg">
+                                <h3>João Vitor Melo</h3>
+                                <p id="t">Técnico em Informática</p>
+                                <p id="t">Gerente Geral da empresa</p>
+                                <p class="contacts">
+                                    <a target="blank_" href="" class="whatsapp">
+                                        <i class="fab fa-whatsapp"></i>
+                                    </a>
+                                    <a href="" target="blank_" class="instagram">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a href="" target="blank_" class="facebook">
+                                        <i class="fab fa-facebook"></i>
+                                    </a>
+                                    <a href="" target="blank_" class="telegram">
+                                        <i class="fab fa-telegram"></i>
+                                    </a>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </fieldset>
+    </section>
+
     <script src="js/waves.js"></script>
     <script type="text/javascript">
         var b = document.querySelector('.topo');
