@@ -325,7 +325,7 @@ session_start();
                         </li>
                         <li>
                             <div class="a">
-                                <img src="images/members/wanderson.jpg">
+                                <img src="https://i.pinimg.com/736x/df/ef/52/dfef52bc718c0e35ded5ad5eb80da4bb.jpg">
                                 <h3>Wanderson Silva</h3>
                                 <p id="t">Técnico em Redes de Computadores</p>
                                 <p id="t">Vice-presidente da empresa</p>
@@ -347,7 +347,7 @@ session_start();
                         </li>
                         <li>
                             <div class="a">
-                                <img src="images/members/joao.jpg">
+                                <img src="https://i.pinimg.com/564x/3a/60/b2/3a60b2d1d4b3e848611e7a0b69eeaecf.jpg">
                                 <h3>João Vitor Melo</h3>
                                 <p id="t">Técnico em Informática</p>
                                 <p id="t">Gerente Geral da empresa</p>
